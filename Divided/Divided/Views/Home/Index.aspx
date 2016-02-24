@@ -9,5 +9,5 @@
     Welcome to ContentPlaceHolder 1
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
-    Welcome to ContentPlaceHolder 2
+    Welcome to ContentPlaceHolder 2 : Welcome to GitHub 
 </asp:Content>
