@@ -86,4 +86,3 @@ C:\Users\gtaneja\Documents\Visual Studio 2012\Projects\WinMonitorApp\WinMonitorA
 C:\Users\gtaneja\Documents\Visual Studio 2012\Projects\WinMonitorApp\WinMonitorApp\WinMonitorApp\bin\System.Web.WebPages.Razor.xml
 C:\Users\gtaneja\Documents\Visual Studio 2012\Projects\WinMonitorApp\WinMonitorApp\WinMonitorApp\obj\Debug\WinMonitorApp.dll
 C:\Users\gtaneja\Documents\Visual Studio 2012\Projects\WinMonitorApp\WinMonitorApp\WinMonitorApp\obj\Debug\WinMonitorApp.pdb
-C:\Users\gtaneja\Documents\Visual Studio 2012\Projects\WinMonitorApp\WinMonitorApp\WinMonitorApp\obj\Debug\WinMonitorApp.csprojResolveAssemblyReference.cache

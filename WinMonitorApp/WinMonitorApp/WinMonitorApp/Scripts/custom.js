@@ -1,30 +1,37 @@
 //master page tab panel button click page loads
+    //pageload function when dashboard tab clicked
     function masterPageDashBoardClicked() {
             $("#masterPageContentPlace").load("Admin/CompanyDashboard");
         }
 
+    //pageload function when component tab clicked
     function masterPageComponentClicked() {
             $("#masterPageContentPlace").load("Admin/ComponentandStatus");
         }
 
+    //pageload function when Metrics tab clicked
     function masterPageMetricsClicked() {
             $("#masterPageContentPlace").load("Admin/PerformanceMetrics");
         }
 
+    //pageload function when activate page tab clicked
     function masterPageAcivatePageClicked() {
             $("#masterPageContentPlace").load("Admin/ActivatePage");
         }
 
+    //pageload function when regitered admin tab clicked
     function masterPageRegisteredAdminClicked() {
             $("#masterPageContentPlace").load("Admin/RegisteredAdmin");
         }
 
+    //pageload function when settings tab clicked
     function masterPageSettingsClicked() {
             $("#masterPageContentPlace").load("Admin/Settings");
     }
 
 
 //Company Dashboard functions
+    //function to open add company account modal
     function addAccountCompanyDashboard() {
         $(function () {
             function reposition() {
@@ -48,6 +55,7 @@
 
 
 //Setting Page Functions
+    //function to open change password modal
     function changePasswordSettings() {
         $(function () {
             function reposition() {
@@ -71,8 +79,8 @@
 
 
 //Component Page Functions
-    //function1
-    function openAddMasterComponentModalFuntion() {                                                                                  //click event: Add Master Component Modal show
+    //function to open add master component modal
+    function openAddMasterComponentModalFuntion() {                                                                                 
         $(function () {
             function reposition() {
                 var modal = $(this),
@@ -93,8 +101,8 @@
         $("#AddMasterComponentModal").modal('show');
     }
 
-    //function2
-    function openAddSpecificComponentModalFuntion() {                                                                                   //click event: Add Specific Component Modal show
+    //function to open add specific component modal
+    function openAddSpecificComponentModalFuntion() {
         $(function () {
             function reposition() {
                 var modal = $(this),
@@ -115,8 +123,8 @@
         $("#AddSpecificComponentModal").modal('show');
     }
 
-    //function3
-    function openCreateIncidentModalFunction() {                                                                                               //click event: Create Incident Modal show
+    //function to open create incident modal
+    function openCreateIncidentModalFunction() {                                                                                              
         $(function () {
             function reposition() {
                 var modal = $(this),
@@ -138,7 +146,7 @@
     }
 
 
-//JQuery to check Company modal and add Company table row  
+//JQuery to check Company modal and to add company account(new row) in company table on dashboard page
     $("#btnaddCompany").click(function () {
 
         if (($("#CompanyName").val()) && ($("#CompanyURL").val())) {
@@ -155,7 +163,7 @@
     });
 
 
-//JQuery to check specific components modal and to add to the table
+//JQuery to check specific components modal and to  add specific component(new row) in existing component table on component page  
     $("#btnaddSpecificComponent").click(function () {
 
         if (($("#formComponentId").val()) && ($("#formComponentName").val())) {
@@ -203,7 +211,7 @@
     $("#companytable").ready(function(){
         $("#companytable").DataTable(
             {
-                "lengthMenu": [[2, 5, 8], [2, 5, 8]]
+                "lengthMenu": [[5, 10, 20], [5, 10, 20]]
             });
     });
 
@@ -211,7 +219,7 @@
     $("#existingComponentTable").ready(function(){
         $("#existingComponentTable").DataTable(
             {
-                "lengthMenu": [[2, 5, 8], [2, 5, 8]]
+                "lengthMenu": [[5, 10, 20], [5, 10, 20]]
             });
     });
 
@@ -220,6 +228,6 @@
     $("#RegisteredAdminTable").ready(function() {
         $("#RegisteredAdminTable").DataTable(
             {
-                "lengthMenu": [[2, 5, 8], [2, 5, 8]]
+                "lengthMenu": [[5, 10, 20], [5, 10, 20]]
             });
     });
