@@ -1,4 +1,5 @@
-﻿<div id="componentPageBody">
+﻿@using WinMonitorApp
+<div id="componentPageBody" onload="loadComponentsFromDB()">
     <div id="headingComponent">
         <span class="PageHeadings">Component And Status</span>
     </div>
@@ -9,7 +10,7 @@
             <thead>
                 <tr>
                     <td class="checkboxColumnComponentPage">
-                        <input type="checkbox" name="componentCheckBox">
+                        <input type="checkbox" id="componentCheckBox" onclick="checkUnCheck(this, 'ComponentListfromDBCheckBoxes')">
                     </td>
                     <td>
                         Component Id
@@ -28,11 +29,18 @@
                     </td>
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="existingComponentTableBody">
+               
             </tbody>
         </table>
                 
         <br /><br />
+
+        <script>
+
+
+
+        </script>
 
 
         <!--table to add component and status dropdown-->
@@ -67,7 +75,7 @@
                             <button class="btn btn-default dropdown-toggle" type="button" id="statusMenu" data-toggle="dropdown">UpdateStatus
                             <span class="caret"></span></button>
                 
-                            <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="statusMenu" style="right: 200px; left: auto;">
+                            <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="statusMenu" style="right: 200px; left: auto;" id="ulStatus">
                     
                                 <!--adding operational option-->
                                 <li role="presentation" ><a role="menuitem" tabindex="-1" id="liOperationalStatus">Operational</a></li>
@@ -117,14 +125,18 @@
                       <!--dialog box body-->
                      <div class = "modal-body">
                         <table class="table" id="addMasterComponentModalTable" style="text-align:center; color:#900000">
-                            <tr>
-                                <td>
-                                    <input type="checkbox" id="selectAllMasterComponentCheckBox"/>
-                                </td>
-                                <td>
-                                    Component Name
-                                </td>
-                            </tr>
+                            <thead>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="selectAllMasterComponentCheckBox" onclick="checkUnCheck(this, 'masterComponentListfromDBCheckBoxes')"/>
+                                    </td>
+                                    <td>
+                                        Component Name
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody id="addMasterComponentModalTableBody">
+                            </tbody>
                         </table>
                      </div>
          
@@ -132,7 +144,7 @@
                      <div class = "modal-footer">
 
                         <!--dialog box add component button-->
-                        <button type = "button" class = "btn btn-primary">
+                        <button type = "button" class = "btn btn-primary" onclick="addMasterComponentToDBAndPage()">
                            Add Component
                         </button>
 
@@ -147,8 +159,8 @@
                                                               
                </div>                                                   <!--dialog box modal div closed-->                                                  
   
-            </div>                                                      <!--add master component modal div closed-->  
-
+            </div>    
+                                                      <!--add master component modal div closed-->  
             <!--Add Specific Component adding Modal -->
             <div class = "modal fade" id = "AddSpecificComponentModal" tabindex = "-1" role = "dialog" aria-labelledby = "AddSpecificComponentModalLabel" aria-hidden = "true">
                <div class = "modal-dialog">
@@ -171,7 +183,6 @@
                       <!--dialog box body-->
                      <div class = "modal-body">
                         <form id="addSpecificComponentForm" style="color:#900000">
-                            <label style="width:30%">Component Id:</label><input type="text" id="formComponentId"/><br><br>
                             <label style="width:30%">Component Name:</label><input type="text" id="formComponentName"/>
                         </form>
                      </div>
@@ -222,7 +233,7 @@
                                 <label style="width:30%">Incident Name</label>
                                 <input type="text" id="formIncidentName"/><br><br>
                                 <label style="width:30%">Incident Details</label>
-                                <input type="text" id="formIncidentDetails" multiple="multiple" rows="6" cols="20"/>
+                                <input type="text" id="formIncidentDetails" />
                             </form>
                      </div>
          

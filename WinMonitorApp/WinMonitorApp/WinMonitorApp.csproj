@@ -39,10 +39,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\..\..\..\..\Documents\Visual Studio 2012\Projects\MvcApplication6\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -110,11 +116,46 @@
   <ItemGroup>
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="DBCompany.cs">
+      <DependentUpon>WinMonitorEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBComponent_With_Status.cs">
+      <DependentUpon>WinMonitorEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBIncident.cs">
+      <DependentUpon>WinMonitorEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBLogin.cs">
+      <DependentUpon>WinMonitorEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBMaster_DBComponent_With_Status.cs">
+      <DependentUpon>WinMonitorEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBSubscription.cs">
+      <DependentUpon>WinMonitorEntityModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Company.cs" />
+    <Compile Include="Models\PerformCompanyComponentWithStatusIncident.cs" />
+    <Compile Include="Models\PerformLogin.cs" />
+    <Compile Include="Models\PerformSubscription.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WinMonitorEntityModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WinMonitorEntityModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WinMonitorEntityModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WinMonitorEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WinMonitorEntityModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WinMonitorEntityModel.edmx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\FilterConfig.cs" />
@@ -152,7 +193,9 @@
     <Content Include="Views\Admin\Master.cshtml">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -171,12 +214,32 @@
     <Content Include="Views\User\statusUserView.cshtml" />
     <Content Include="Views\User\Subscription.cshtml" />
     <Content Include="Views\User\userMasterPage.cshtml" />
+    <EntityDeploy Include="WinMonitorEntityModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>WinMonitorEntityModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="WinMonitorEntityModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>WinMonitorEntityModel.edmx</DependentUpon>
+      <LastGenOutput>WinMonitorEntityModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="WinMonitorEntityModel.edmx.diagram">
+      <DependentUpon>WinMonitorEntityModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="WinMonitorEntityModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>WinMonitorEntityModel.edmx</DependentUpon>
+      <LastGenOutput>WinMonitorEntityModel.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,4 +1,6 @@
-﻿<div class="PageHeadings">Account Settings</div>
+﻿@using WinMonitorApp.Models
+
+<div class="PageHeadings">Account Settings</div>
 <br><br><br><br>
 <div class="row">
     <div class="col-sm-4" style="color:#900000">
@@ -56,7 +58,7 @@
                      </div>
          
                 <div class = "modal-body">
-                     <form>
+                     <form id="FormModalSettingsPage">
                          <div class="row">
                             <div class="col-sm-4" style="text-align:left;">
                                 <span style="color:#900000">Enter Old Password</span>

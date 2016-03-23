@@ -5,11 +5,8 @@ using System.Web;
 
 namespace WinMonitorApp.Models
 {
-    public class Company
+    public class PerformSubscription
     {
-        public String mstrCompId;
-        public String mstrCompName;
-        public String mstrCompUrl;
-
+        // code to be added later
     }
 }

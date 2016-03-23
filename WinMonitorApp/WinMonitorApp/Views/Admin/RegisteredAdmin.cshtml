@@ -1,4 +1,6 @@
-﻿<div class="PageHeadings">Registered Administrator List</div>
+﻿@using WinMonitorApp.Models;
+
+<div class="PageHeadings">Registered Administrator List</div>
 <br><br><br><br>
 
 <div class="table-responsive">
@@ -17,41 +19,14 @@
         </tr>
     </thead>
     <tbody>
-      <tr>
-            <td>
-                ABC
-            </td>
-            <td>
-                Editable
-            </td>
-            <td>
-                Inactive
-            </td>
-        </tr>
-
-        <tr>
-            <td>
-                DEF
-            </td>
-            <td>
-                View Only
-            </td>
-            <td>
-                Inactive
-            </td>
-        </tr>
-
-        <tr style="color:green">
-            <td>
-                XYZ
-            </td>
-            <td>
-                Editable
-            </td>
-            <td>
-                Active
-            </td>
-        </tr>
+      @foreach (var Admin in Model)
+      {
+          <tr>
+              <td>@Admin.DBUsername</td>
+              <td>@Admin.DBAccountType</td>
+              <td> *Active/Inactive Session</td>
+          </tr>
+      }
     </tbody>
 </table>
 </div>
