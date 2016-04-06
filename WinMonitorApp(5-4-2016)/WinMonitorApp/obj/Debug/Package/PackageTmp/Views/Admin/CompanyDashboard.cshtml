@@ -1,23 +1,26 @@
 ﻿@using WinMonitorApp.Models
 
-<h5 class="PageHeadings">Company Account</h5>
-<br><br><br><br>
+<span style="float:left; font-size:larger; font-weight:500; margin-left:10px; margin-top:20px;">Account</span>
+<button class = "btn btn-link btn-lg" style="float:right; color: #67747c; margin-right:10px;" id="btnmodal" onclick="addAccountCompanyDashboard()"> 
+       Add Account
+</button>
+<br><br><hr /><br>
 <div class="table-responsive">
 <table class=" table table-hover CompanyDashboardTable" id="companytable">                                                                 <!-- Company Table-->
     
     <thead>
         <tr>
             <td>
-                Selected Company
+                Select
             </td>
             <td>
-                Company No
+                Account#
             </td>
             <td>
-                Company Name
+                Name
             </td>
             <td>
-                Company URL
+                URL
             </td>
         </tr>
     </thead>
@@ -35,24 +38,6 @@
 </table>
 </div>
 <br /><br />
-
-
-
-<div class="row">
-    <div class="col-sm-4" style="padding-left:10px;">
-        <button class = "btn btn-link btn-lg" style="padding-left:10px; color:#0067BB;" id="btnmodal" onclick="addAccountCompanyDashboard()"> 
-            Add Account
-        </button>
-
-    </div>
-    <div class="col-sm-4">
-        
-    </div>
-    
-    <div class="col-sm-4">
-    </div>
-</div>
-
 
 <!--to add custom.js functions after body load-->
 <script src="~/Scripts/custom.js"></script>
@@ -73,7 +58,7 @@
             
                             <!--dialog box label--> 
                             <h4 class = "modal-title" id = "addCompanyAccountModalLabel" style="color:#0067BB;">
-                                 <b>Add New Company Account</b>
+                                 <b>Company Account</b>
                              </h4>
                      </div>
          
@@ -82,7 +67,7 @@
                      <form>
                          <div class="row">
                             <div class="col-sm-4" style="text-align:left;">
-                                <span>Enter Company Name</span>
+                                <span>Company Name</span>
                             </div>  
                              <div class="col-sm-8" style="text-align:left;">
                                 <input type="text" id="CompanyName"/>
@@ -91,10 +76,10 @@
                          <br />
                          <div class="row">
                              <div class="col-sm-4" style="text-align:left;">
-                                 <span>Enter Company URL</span>
+                                 <span>URL</span>
                              </div>
-                             <div class="col-sm-8" style="text-align:left;">
-                                 <input type="url"  id="CompanyURL"/>
+                             <div class="col-sm-8" style="text-align:left;">                        
+                                 <input type="url"  id="CompanyURL"/>                                   <!--regex here-->
                              </div>
                          </div>    
                      </form>

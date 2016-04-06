@@ -167,18 +167,20 @@ function addMasterComponentToDBAndPage() {
     var companyId = document.getElementById("companyIdStoringTextField").value;
 
     $('input[name="masterComponentListfromDBCheckBoxes"]:checked').closest("tr").css("background-color", "#CCFFCC");
-    var receivedataSpecificComponent;
     $.ajax({
         url: "addMasterComponentToDB",
         type: 'get',
         async: false,
         datatype: 'json',
         data: { pstrMasterComponentListFromPage: masterComponentSelected, pstrCompanyId: companyId },
-        success: function (data) { receivedataSpecificComponent = data; },
+        success: function (data) {
+            //alert(data);
+        },
         error: function () { alert("error"); }
     });
-    $('#AddMasterComponentModal').modal('hide');
-    alert(receivedataSpecificComponent);
+    $('#AddMasterComponentModal').on('hide.bs.modal', function () {
+        $('#AddMasterComponentModal').removeClass("modal-backdrop fade in");
+    });
     $("#masterPageContentPlace").load("ComponentandStatus");
 
 
@@ -247,10 +249,15 @@ function openCreateIncidentModalFunction() {
 //function to add company details from page to data and reflecting changes in company dashboard page
 function addCompanyToDbAndView() {
 
-    if (($("#CompanyName").val()) && ($("#CompanyURL").val())) {
-
-        var jsonCompanyName = $("#CompanyName").val();
-        var jsonCompanyURL = $("#CompanyURL").val();
+    if (($("#CompanyName").val()) && ($("#CompanyURL").val()) ) {
+        
+        var inputVal = $("#CompanyURL").val();
+        var characterReg = /^(http|https)?:\/\/[a-zA-Z0-9-\.]+\.[a-z]{2,4}/;
+        
+        if(characterReg.test(inputVal))
+        {
+            var jsonCompanyName = $("#CompanyName").val();
+            var jsonCompanyURL = $("#CompanyURL").val();
 
         $.ajax({
             type: 'get',
@@ -261,14 +268,20 @@ function addCompanyToDbAndView() {
             dataType: "json",
             async:false,
             success: function (data) {
- //              alert(data);
+                //              alert(data);
             },
             failure: function (errMsg) {
                 alert(errMsg);
             }
         });
-        $('#addCompanyAccountModal').modal('hide');
-        alert("Company Sucessfully Added");
+        }
+        else
+        {
+            alert("Incorrect URL format");
+        }
+        $('#addCompanyAccountModal').on('hide.bs.modal', function () {
+            $('#addCompanyAccountModal').removeClass("modal-backdrop fade in");
+        });
         $("#masterPageContentPlace").load("CompanyDashboard");
     }
     else {
@@ -284,12 +297,14 @@ $('input:radio[name="radioCompanySelect"]').click(function () {
         var giveCompanyName = tempCompany.find("#RazorCompanyName").text();
 
         tempCompany.css("background-color", "#CCFFCC");
-
+        setTimeout(function () {
+            tempCompany.css("background-color", "transparent");
+        }, 2000);
 
         //global company id passed
         document.getElementById("companyIdStoringTextField").value = tempCompany.find("#RazorCompanyId").text();
   //     alert("Selected Company: " + giveCompanyName);
-
+        
     }
     else {
         alert("No Company Selected");
@@ -327,7 +342,6 @@ $("#btnaddSpecificComponent").click(function () {
         var companyId = document.getElementById("companyIdStoringTextField").value;
         var jsonSpecificComponents = { "jsonSpecificComponentName": $("#formComponentName").val(), "jsonSpecificComponentStatus": "Operational", "jsonSpecificComponentCompanyId": companyId };
 
-        var receivedataSpecificComponent;
         $.ajax({
             type: "POST",
             url: "/Admin/jsonSpecificComponentRetrieve",
@@ -337,14 +351,15 @@ $("#btnaddSpecificComponent").click(function () {
             dataType: "text",
             async: false,
             success: function (data) {
-                receivedataSpecificComponent = data;
+//              alert(data);
             },
             failure: function () {
                 alert("error");
             }
         });
-        $('#AddSpecificComponentModal').modal('hide');
-        alert(receivedataSpecificComponent);
+        $('#AddSpecificComponentModal').on('hide.bs.modal', function () {
+            $('#AddSpecificComponentModal').removeClass("modal-backdrop fade in");
+        });
         $("#masterPageContentPlace").load("ComponentandStatus");
 
     }
@@ -365,7 +380,6 @@ $("#btnaddIncident").click(function () {
         });
         var jsonIncidents = { "jsonIncidentName": $("#formIncidentName").val(), "jsonIncidentDetails": $("#formIncidentDetails").val(), "jsonComponentIdList": componentCheckedToRaiseIncident, "jsonCompanyID": companyId };
 
-        var receivedataIncident;
         $.ajax({
             type: "POST",
             url: "jsonIncidentRetreive",
@@ -375,14 +389,15 @@ $("#btnaddIncident").click(function () {
             dataType: "text",
             async: false,
             success: function (data) {
-                receivedataIncident = data;
+//                alert(data);
             },
             error: function () {
                 alert("error");
             }
         });
-        $('#raiseIncidentModal').modal('hide');
-        alert(receivedataIncident);
+        $('#raiseIncidentModal').on('hide.bs.modal', function () {
+            $('#raiseIncidentModal').removeClass("modal-backdrop fade in");
+        });
         $("#masterPageContentPlace").load("ComponentandStatus");
 
     }

@@ -5,56 +5,21 @@
             loadComponentsFromDB();
         });
     </script>
-    <h5 id="headingComponent">
         <input type="hidden" id="statusStoringfeild"/>
-        <span class="PageHeadings">Component And Status</span>
-    </h5>
-    <br><br><br><br>
-    <div id="contentComponent">
-        <!--table of existing components-->
-        <table class="table table-hover" id="existingComponentTable">
-            <thead>
-                <tr>
-                    <td class="checkboxColumnComponentPage">
-                        <input type="checkbox" id="componentCheckBox" onclick="checkUnCheck(this, 'ComponentListfromComponentPageCheckBoxes')">
-                    </td>
-                    <td>
-                        Component Name
-                    </td>
-                    <td>
-                        Component Type
-                    </td>
-                    <td>
-                        Component Status
-                    </td>
-                    <td>
-                        Company Name
-                    </td>
-                    <td>
-                        Incident Name
-                    </td>
-                </tr>
-            </thead>
-            <tbody id="existingComponentTableBody">
-               
-            </tbody>
-        </table>
-                
-         <div style="width:100%">
-            <span id="componentDeleteButton" style="font-weight:lighter;float: left;" onclick="deleteSelectedComponents()"><u>Delete</u></span>    
-        </div>
-        <br /><br />
 
-        <!--table to add component and status dropdown-->
-        <table class="table">  
-            <tr>
-                <td style="margin:auto auto;">
+<table class="table">
+    <tr>
+        <td>
+            <span style="float:left; font-size:larger; font-weight:500; padding-left:10px; padding-top:20px;">Components</span>
+            
+        </td>
+            <td style="float:left; font-size:larger; font-weight:500; padding-left:10px; padding-top:20px;">
                     <!--div to add new component-->
                     <div id="addComponentDiv">
                     
                         <!--combobox of type selection of to be added component-->
                         <div class="dropdown">
-                            <span style="color:#0067BB;">Add:</span>
+                            <span style="color:#67747c; font-size:large; font-weight:500;">Add:</span>
                             <button class="btn btn-default dropdown-toggle" type="button" id="addComponentMenu" data-toggle="dropdown">Add Component
                             <span class="caret"></span></button>
                 
@@ -68,12 +33,12 @@
                             </ul>
                         </div>
                     </div>
-                </td>
-                <td style="margin:auto auto;">
+        </td>
+            <td style="float:left; font-size:large; font-weight:500; padding-left:10px; padding-top:20px;">
                     <!--div to select status-->
                     <div id="componentStatusDiv">
                         <div class="dropdown">
-                            <span style="color:#0067BB;">Status:</span>
+                            <span style="color:#67747c; font-size:large; font-weight:500;">Status:</span>
                             <button class="btn btn-default dropdown-toggle" type="button" id="statusMenu" data-toggle="dropdown">UpdateStatus
                             <span class="caret"></span></button>
                 
@@ -91,8 +56,46 @@
                         </div>
                     </div>
                 </td>
-            </tr>
-        </table>                            <!--table of component and status dropdown ended-->
+        <td>
+
+        </td>
+    </tr>
+</table>
+<hr />
+        
+<button type="button" class="btn btn-link" id="componentDeleteButton" style="font-weight:lighter; float: left;" onclick="deleteSelectedComponents()">Delete</button>
+<br><br><br>
+    <div id="contentComponent">
+        <!--table of existing components-->
+        <table class="table table-hover" id="existingComponentTable">
+            <thead>
+                <tr>
+                    <td class="checkboxColumnComponentPage">
+                        <input type="checkbox" id="componentCheckBox" onclick="checkUnCheck(this, 'ComponentListfromComponentPageCheckBoxes')">
+                    </td>
+                    <td>
+                        Component
+                    </td>
+                    <td>
+                        Type
+                    </td>
+                    <td>
+                        Status
+                    </td>
+                    <td>
+                        Company
+                    </td>
+                    <td>
+                        Incident
+                    </td>
+                </tr>
+            </thead>
+            <tbody id="existingComponentTableBody">
+               
+            </tbody>
+        </table>
+                
+        <br /><br />
 
 
 <!--to add custom.js functions after body load-->
@@ -115,7 +118,7 @@
 
                          <!--dialog box label-->
                         <h4 class = "modal-title" id = "AddMasterComponentModalLabel" style="color:#0067BB;">
-                           <b>Add Master Component</b>
+                           <b>Choose Component</b>
                         </h4>
                      </div>
                  
@@ -128,7 +131,7 @@
                                         <input type="checkbox" id="selectAllMasterComponentCheckBox" onclick="checkUnCheck(this, 'masterComponentListfromDBCheckBoxes')"/>
                                     </td>
                                     <td style="font-weight:500; font-size:large;">
-                                        SELECT COMPONENT
+                                        COMPONENT
                                     </td>
                                 </tr>
                             </thead>
@@ -141,8 +144,8 @@
                      <div class = "modal-footer">
 
                         <!--dialog box add component button-->
-                        <button type = "button" class = "btn btn-primary" onclick="addMasterComponentToDBAndPage()">
-                           Add Component
+                        <button type = "button" class = "btn btn-primary" onclick="addMasterComponentToDBAndPage()" data-dismiss = "modal">
+                           Add
                         </button>
 
                         <!--dialog box Close Button-->
@@ -173,14 +176,14 @@
 
                          <!--dialog box label-->
                         <h4 class = "modal-title" id = "AddSpecificComponentModalLabel" style="color:#0067BB;">
-                           <b>Add Specific Component</b>
+                           <b>Component</b>
                         </h4>
                      </div>
                  
                       <!--dialog box body-->
                      <div class = "modal-body">
                         <form id="addSpecificComponentForm">
-                            <label style="width:30%">Component Name:</label><input type="text" id="formComponentName"/>
+                            <label style="width:30%">Name:</label><input type="text" id="formComponentName"/>
                         </form>
                      </div>
          
@@ -188,8 +191,8 @@
                      <div class = "modal-footer">
 
                         <!--dialog box add component button-->
-                        <button type = "button" class = "btn btn-primary" id="btnaddSpecificComponent">
-                           Add Component
+                        <button type = "button" class = "btn btn-primary" id="btnaddSpecificComponent" data-dismiss = "modal">
+                           Add
                         </button>
 
                         <!--dialog box Close Button-->
@@ -220,7 +223,7 @@
 
                          <!--dialog box label-->
                         <h4 class = "modal-title" id = "raiseIncidentModalLabel" style="color:#0067BB;">
-                           <b>Create Incident</b>
+                           <b>Incident</b>
                         </h4>
                      </div>
                  
@@ -228,12 +231,12 @@
                      <div class = "modal-body">
                                 <table style="color:#900000">
                                     <tr>
-                                        <label style="width:30%; float:left;">Incident Name</label>
+                                        <label style="width:30%; float:left;">Name</label>
                                         <input type="text" id="formIncidentName"/><br><br>
                                     </tr>
 
                                     <tr>
-                                        <label style="width:30%; float:left;">Incident Details</label>
+                                        <label style="width:30%; float:left;">Details</label>
                                         <textarea rows="3" cols="22" id="formIncidentDetails"/>
                                     </tr>
                                 </table>
@@ -243,8 +246,8 @@
                      <div class = "modal-footer">
 
                         <!--dialog box add component button-->
-                        <button type = "button" class = "btn btn-primary" id="btnaddIncident">
-                           Add Incident
+                        <button type = "button" class = "btn btn-primary" id="btnaddIncident" data-dismiss = "modal">
+                           Add
                         </button>
 
                         <!--dialog box Close Button-->

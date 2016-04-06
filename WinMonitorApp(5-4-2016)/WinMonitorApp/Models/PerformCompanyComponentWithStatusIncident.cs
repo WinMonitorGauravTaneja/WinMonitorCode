@@ -164,8 +164,8 @@ namespace WinMonitorApp.Models
                 mDBLogObj.DBCSId = mDBSpecific_Component_With_StatusObj.DBCSId;
                 mDBLogObj.DBIncidentId = "IncidentDefault";
                 mDBLogObj.DBComponentName = mDBSpecific_Component_With_StatusObj.DBComponentName;
-                mDBLogObj.DBIncidentName = null;
-                mDBLogObj.DBIncidentDetails = null;
+                mDBLogObj.DBIncidentName = "";
+                mDBLogObj.DBIncidentDetails = "";
                 mDBLogObj.DBDateTime = DateTime.Now.ToString("ddd, MMM d, yyyy HH:mm:ss");
 
                 //adds component to log history
@@ -243,8 +243,8 @@ namespace WinMonitorApp.Models
                         historyObj.DBCSId = componentId;
                         historyObj.DBIncidentId = "IncidentDefault";
                         historyObj.DBComponentName = componentObj.DBComponentName;
-                        historyObj.DBIncidentName = null;
-                        historyObj.DBIncidentDetails = null;
+                        historyObj.DBIncidentName = "";
+                        historyObj.DBIncidentDetails = "";
                         historyObj.DBDateTime = DateTime.Now.ToString("ddd, MMM d, yyyy HH:mm:ss");
 
                         //adds history obj to database
@@ -441,8 +441,8 @@ namespace WinMonitorApp.Models
                     historyObj.DBCSId = component.DBCSId;
                     historyObj.DBIncidentId = "IncidentDefault";
                     historyObj.DBComponentName = component.DBComponentName;
-                    historyObj.DBIncidentName = null;
-                    historyObj.DBIncidentDetails = null;
+                    historyObj.DBIncidentName = "";
+                    historyObj.DBIncidentDetails = "";
                     historyObj.DBDateTime = DateTime.Now.ToString("ddd, MMM d, yyyy HH:mm:ss");
 
                     //adds history obj to database

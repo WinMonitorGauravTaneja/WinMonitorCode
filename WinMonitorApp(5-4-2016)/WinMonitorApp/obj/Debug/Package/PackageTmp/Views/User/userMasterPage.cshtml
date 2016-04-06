@@ -6,12 +6,7 @@
 <script src="~/Scripts/jquery-1.9.1.js"></script>
 <script src="~/Scripts/bootstrap.min.js"></script>
 <script src="~/Scripts/bootstrap.js"></script>
-<script>
-    $(document).ready(function () {
 
-
-    });
-</script>
 <!--Bootstrap Value imports-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -32,7 +27,6 @@ href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css">
 <script type="text/javascript" 
 src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
 
-
  <!--Upper Top Default Blue Bar-->
     <div id="StartUserColorDiv" style="height:20px; width:100%; color:#0067BB; background-color:#0067BB;">
            Blue Color
@@ -42,7 +36,7 @@ src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
 <div id="body" style="width:99%; margin:5px;">
     <div id="header" style=" width:100%; height:auto;">
         <div id="label" style=" width:100%; float:left; font-size: 250%; margin:10px;">
-                <span style="color:#0067BB; font-weight:800;">WIN</span><span style="color:black; font-weight:800">MONITOR</span>&trade;
+                <span style="color:#0067BB; font-weight:800;">WIN</span><span style="color:black; font-weight:800">MONITOR</span>
                 <img src="@Url.Content("~/Content/Images/CustomerLogo.png")" style="float:right; width:200px; height:40px; margin:10px;"/>
         </div><br />
   
@@ -51,21 +45,21 @@ src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
 
 
 <!--Down Black using Navbar-->
-    <nav class="navbar-left" style="width:100%;background-color:#484848; height:35px;">
+    <nav class="navbar-left" style="width:100%; background-color:#484848; height:35px;">
       <div>
         <div class="navbar-header"  style="height:35px;">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="height:35px;">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="height:35px; background-color:#484848;">
             <span class="icon-bar" style="height:35px;"></span>
             <span class="icon-bar" style="height:35px;"></span>
             <span class="icon-bar" style="height:35px;"></span> 
           </button>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar" style="background-color:#484848; height:35px;">
-          <ul class="nav nav-tabs navbar-left" style="font-size: 150%; color:white; height:35px;">
-                <li><a href="~/User/statusUserView" target="content" id="frameStatusUserView" style="height:35px; font-size:large;"><span style="color:white;">Status</span></a></li>
-                <li><a href="~/User/historyUserView" target="content" id="frameHistoryUserView" style="height:35px; font-size:large;"><span style="color:white;">History</span></a></li>
-                <li><a href="~/User/Metrics" target="content" id="frameMetrics" style="height:35px; font-size:large;"><span style="color:white;">Metrics</span></a></li>
-                <li><a href="~/User/Subscription" target="content" id="frameSubscriptions" style="height:35px; font-size:large;"><span style="color:white;">Subscription</span></a></li>
+          <ul class="nav nav-tabs navbar-left" style="font-size: 150%; height:35px;" id="navbarLinks">
+                <li><a href="~/User/statusUserView" target="content" id="frameStatusUserView" style="height:35px; font-size:medium;"><span style="color:white;">Status</span></a></li>
+                <li><a href="~/User/historyUserView" target="content" id="frameHistoryUserView" style="height:35px; font-size:medium;"><span style="color:white;">History</span></a></li>
+                <!--<li><a href="~/User/Metrics" target="content" id="frameMetrics" style="height:35px; font-size:medium;"><span style="color:white;">Metrics</span></a></li>-->
+                <!--<li><a href="~/User/Subscription" target="content" id="frameSubscriptions" style="height:35px; font-size:medium;"><span style="color:white;">Subscription</span></a></li>-->
             </ul>
         </div>
       </div>

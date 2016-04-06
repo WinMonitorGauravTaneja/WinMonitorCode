@@ -10,13 +10,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="~/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" href="~/css/bootstrap.min.css"/>
 
 <!-- Optional theme -->
-<link rel="stylesheet" href="~/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+<link rel="stylesheet" href="~/css/bootstrap-theme.min.css"/>
 
 <!-- Latest compiled and minified JavaScript -->
-<script src="~/Scripts/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="~/Scripts/bootstrap.min.js"></script>
 
 
 <link rel="stylesheet" href="~/css/custom.css" />
@@ -52,14 +52,14 @@ src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
 	<div id="headerDiv" class="row">
 		<div class="col-xs-9" style="text-align:left;">
 			<h2>
-				<span style="color:#0067BB; font-weight:800; margin-left:20px;">WIN</span><span style="color:black; font-weight:800;">MONITOR</span>&trade;
+				<span style="color:#0067BB; font-weight:800; margin-left:20px;">WIN</span><span style="color:black; font-weight:800;">MONITOR</span>
 			</h2>
 		</div>
         <input type="hidden" id="companyIdStoringTextField"/>
 		<div class="col-xs-3" style="text-align:right;">
 			<h4>
 				<img src="@Url.Content("~/Content/Images/CustomerLogo.png")" style="width:200px; height:40px; margin-right:5px;"/><br />
-					<button type="button"  class="btn btn-link" id="btnLogout" style="font-weight:500; font-size:18px; height:15px; margin:5px;">
+					<button type="button"  class="btn btn-link" id="btnLogout" style="font-weight:500; font-size:18px; height:15px; margin:5px; color: #67747c;">
 						Logout
 					</button>
 			</h4>
@@ -67,8 +67,8 @@ src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
 	</div>
 	
     <!--Lower Top Default Black Bar-->
-    <div id="EndColorDiv" style="height:20px; width:100%; color:#484848; background-color:#484848;">
-           Blue Color
+    <div id="EndColorDiv" style="height:25px; width:100%; color:#484848; background-color:#484848;">
+           Black Color
     </div>
 
 
@@ -77,7 +77,7 @@ src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
         <tr>
             <td style="vertical-align:top;">
 			    <!--master page tab button panel-->
-                <div class="btn-group-vertical">
+                <div class="btn-group-vertical" style="width:200px;">
 				    <button type="button" class="btn btn-link masterPageTabButton" id="btndashboard" onclick="masterPageDashBoardClicked()">
 					    <b>Dashboard</b>
 				    </button>
@@ -85,13 +85,13 @@ src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
 					    <b>Components</b>
 				    </button>
 				    <button type="button" class="btn btn-link masterPageTabButton" id="btnmetrics" onclick="masterPageMetricsClicked()">
-					    <b>Performance Metrics</b>
+					    <b>Metrics</b>
 				    </button>
 				    <button type="button" class="btn btn-link masterPageTabButton" id="btnactivate" onclick="masterPageAcivatePageClicked()">
-					    <b>Activate Page</b>
+					    <b>Activate</b>
 				    </button>
 				    <button type="button" class="btn btn-link masterPageTabButton" id="btnregistered" onclick="masterPageRegisteredAdminClicked()">
-					    <b>Registered Administrators</b>
+					    <b>Administrators</b>
 				    </button>
 				    <button type="button" class="btn btn-link masterPageTabButton" id="btnsettings" onclick="masterPageSettingsClicked()">
 					    <b>Settings</b>
@@ -99,7 +99,7 @@ src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
 			    </div>
             </td>
             <!--page content placement place-->
-		    <td style="width:100%; height:100%;" id="masterPageContentPlace">
+		    <td style="width:100%; height:100%; vertical-align:top;" id="masterPageContentPlace">
 		    </td>	
         </tr>
     </table>

@@ -11,7 +11,7 @@
           </Key>
           <Property Name="DBCompanyId" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="DBCompanyName" Type="varchar" MaxLength="50" />
-          <Property Name="DBURL" Type="varchar" MaxLength="50" />
+          <Property Name="DBURL" Type="varchar" MaxLength="200" />
         </EntityType>
         <EntityType Name="DBComponent_With_Status">
           <Key>
@@ -158,7 +158,7 @@
           </Key>
           <Property Name="DBCompanyId" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
           <Property Name="DBCompanyName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
-          <Property Name="DBURL" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="DBURL" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
           <NavigationProperty Name="DBComponent_With_Status" Relationship="WinMonitorEntityModel.FK__DBCompone__DBCom__4865BE2A" FromRole="DBCompany" ToRole="DBComponent_With_Status" />
         </EntityType>
         <EntityType Name="DBComponent_With_Status">

@@ -487,27 +487,6 @@ C:\Users\gkaur\Desktop\WinMonitorApp(5-4-2016)-ByGaurav\WinMonitorApp(4-4-2016)\
 C:\Users\gkaur\Desktop\WinMonitorApp(5-4-2016)-ByGaurav\WinMonitorApp(4-4-2016)\WinMonitorApp\obj\Debug\WinMonitorApp.csprojResolveAssemblyReference.cache
 C:\Users\gkaur\Desktop\WinMonitorApp(5-4-2016)-ByGaurav\WinMonitorApp(4-4-2016)\WinMonitorApp\obj\Debug\WinMonitorApp.dll
 C:\Users\gkaur\Desktop\WinMonitorApp(5-4-2016)-ByGaurav\WinMonitorApp(4-4-2016)\WinMonitorApp\obj\Debug\WinMonitorApp.pdb
-C:\Users\gtaneja\Documents\Visual Studio 2012\Projects\WinMonitorApp(5-4-2016)\WinMonitorApp\bin\WinMonitorApp.dll
-C:\Users\gtaneja\Documents\Visual Studio 2012\Projects\WinMonitorApp(5-4-2016)\WinMonitorApp\bin\WinMonitorApp.pdb
-C:\Users\gtaneja\Documents\Visual Studio 2012\Projects\WinMonitorApp(5-4-2016)\WinMonitorApp\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\gtaneja\Documents\Visual Studio 2012\Projects\WinMonitorApp(5-4-2016)\WinMonitorApp\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
-C:\Users\gtaneja\Documents\Visual Studio 2012\Projects\WinMonitorApp(5-4-2016)\WinMonitorApp\bin\Newtonsoft.Json.dll
-C:\Users\gtaneja\Documents\Visual Studio 2012\Projects\WinMonitorApp(5-4-2016)\WinMonitorApp\bin\System.Web.Helpers.dll
-C:\Users\gtaneja\Documents\Visual Studio 2012\Projects\WinMonitorApp(5-4-2016)\WinMonitorApp\bin\System.Web.Mvc.dll
-C:\Users\gtaneja\Documents\Visual Studio 2012\Projects\WinMonitorApp(5-4-2016)\WinMonitorApp\bin\System.Web.Razor.dll
-C:\Users\gtaneja\Documents\Visual Studio 2012\Projects\WinMonitorApp(5-4-2016)\WinMonitorApp\bin\System.Web.WebPages.Deployment.dll
-C:\Users\gtaneja\Documents\Visual Studio 2012\Projects\WinMonitorApp(5-4-2016)\WinMonitorApp\bin\System.Web.WebPages.dll
-C:\Users\gtaneja\Documents\Visual Studio 2012\Projects\WinMonitorApp(5-4-2016)\WinMonitorApp\bin\System.Web.WebPages.Razor.dll
-C:\Users\gtaneja\Documents\Visual Studio 2012\Projects\WinMonitorApp(5-4-2016)\WinMonitorApp\bin\Newtonsoft.Json.xml
-C:\Users\gtaneja\Documents\Visual Studio 2012\Projects\WinMonitorApp(5-4-2016)\WinMonitorApp\bin\System.Web.Helpers.xml
-C:\Users\gtaneja\Documents\Visual Studio 2012\Projects\WinMonitorApp(5-4-2016)\WinMonitorApp\bin\System.Web.Mvc.xml
-C:\Users\gtaneja\Documents\Visual Studio 2012\Projects\WinMonitorApp(5-4-2016)\WinMonitorApp\bin\System.Web.Razor.xml
-C:\Users\gtaneja\Documents\Visual Studio 2012\Projects\WinMonitorApp(5-4-2016)\WinMonitorApp\bin\System.Web.WebPages.xml
-C:\Users\gtaneja\Documents\Visual Studio 2012\Projects\WinMonitorApp(5-4-2016)\WinMonitorApp\bin\System.Web.WebPages.Deployment.xml
-C:\Users\gtaneja\Documents\Visual Studio 2012\Projects\WinMonitorApp(5-4-2016)\WinMonitorApp\bin\System.Web.WebPages.Razor.xml
-C:\Users\gtaneja\Documents\Visual Studio 2012\Projects\WinMonitorApp(5-4-2016)\WinMonitorApp\obj\Debug\WinMonitorApp.csprojResolveAssemblyReference.cache
-C:\Users\gtaneja\Documents\Visual Studio 2012\Projects\WinMonitorApp(5-4-2016)\WinMonitorApp\obj\Debug\WinMonitorApp.dll
-C:\Users\gtaneja\Documents\Visual Studio 2012\Projects\WinMonitorApp(5-4-2016)\WinMonitorApp\obj\Debug\WinMonitorApp.pdb
 C:\Users\gkaur\Desktop\WinMonitorApp(5-4-2016)-by guarav\WinMonitorApp(5-4-2016)\WinMonitorApp\bin\WinMonitorApp.dll
 C:\Users\gkaur\Desktop\WinMonitorApp(5-4-2016)-by guarav\WinMonitorApp(5-4-2016)\WinMonitorApp\bin\WinMonitorApp.pdb
 C:\Users\gkaur\Desktop\WinMonitorApp(5-4-2016)-by guarav\WinMonitorApp(5-4-2016)\WinMonitorApp\bin\Microsoft.Web.Infrastructure.dll
@@ -555,3 +534,24 @@ C:\Users\gtaneja\Desktop\WinMonitorApp(5-4-2016)\WinMonitorApp\bin\System.Web.We
 C:\Users\gtaneja\Desktop\WinMonitorApp(5-4-2016)\WinMonitorApp\bin\System.Web.WebPages.Razor.xml
 C:\Users\gtaneja\Desktop\WinMonitorApp(5-4-2016)\WinMonitorApp\obj\Debug\WinMonitorApp.dll
 C:\Users\gtaneja\Desktop\WinMonitorApp(5-4-2016)\WinMonitorApp\obj\Debug\WinMonitorApp.pdb
+C:\Users\gtaneja\Documents\Visual Studio 2012\Projects\WinMonitorApp(5-4-2016)\WinMonitorApp\bin\WinMonitorApp.dll
+C:\Users\gtaneja\Documents\Visual Studio 2012\Projects\WinMonitorApp(5-4-2016)\WinMonitorApp\bin\WinMonitorApp.pdb
+C:\Users\gtaneja\Documents\Visual Studio 2012\Projects\WinMonitorApp(5-4-2016)\WinMonitorApp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\gtaneja\Documents\Visual Studio 2012\Projects\WinMonitorApp(5-4-2016)\WinMonitorApp\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\gtaneja\Documents\Visual Studio 2012\Projects\WinMonitorApp(5-4-2016)\WinMonitorApp\bin\Newtonsoft.Json.dll
+C:\Users\gtaneja\Documents\Visual Studio 2012\Projects\WinMonitorApp(5-4-2016)\WinMonitorApp\bin\System.Web.Helpers.dll
+C:\Users\gtaneja\Documents\Visual Studio 2012\Projects\WinMonitorApp(5-4-2016)\WinMonitorApp\bin\System.Web.Mvc.dll
+C:\Users\gtaneja\Documents\Visual Studio 2012\Projects\WinMonitorApp(5-4-2016)\WinMonitorApp\bin\System.Web.Razor.dll
+C:\Users\gtaneja\Documents\Visual Studio 2012\Projects\WinMonitorApp(5-4-2016)\WinMonitorApp\bin\System.Web.WebPages.Deployment.dll
+C:\Users\gtaneja\Documents\Visual Studio 2012\Projects\WinMonitorApp(5-4-2016)\WinMonitorApp\bin\System.Web.WebPages.dll
+C:\Users\gtaneja\Documents\Visual Studio 2012\Projects\WinMonitorApp(5-4-2016)\WinMonitorApp\bin\System.Web.WebPages.Razor.dll
+C:\Users\gtaneja\Documents\Visual Studio 2012\Projects\WinMonitorApp(5-4-2016)\WinMonitorApp\bin\Newtonsoft.Json.xml
+C:\Users\gtaneja\Documents\Visual Studio 2012\Projects\WinMonitorApp(5-4-2016)\WinMonitorApp\bin\System.Web.Helpers.xml
+C:\Users\gtaneja\Documents\Visual Studio 2012\Projects\WinMonitorApp(5-4-2016)\WinMonitorApp\bin\System.Web.Mvc.xml
+C:\Users\gtaneja\Documents\Visual Studio 2012\Projects\WinMonitorApp(5-4-2016)\WinMonitorApp\bin\System.Web.Razor.xml
+C:\Users\gtaneja\Documents\Visual Studio 2012\Projects\WinMonitorApp(5-4-2016)\WinMonitorApp\bin\System.Web.WebPages.xml
+C:\Users\gtaneja\Documents\Visual Studio 2012\Projects\WinMonitorApp(5-4-2016)\WinMonitorApp\bin\System.Web.WebPages.Deployment.xml
+C:\Users\gtaneja\Documents\Visual Studio 2012\Projects\WinMonitorApp(5-4-2016)\WinMonitorApp\bin\System.Web.WebPages.Razor.xml
+C:\Users\gtaneja\Documents\Visual Studio 2012\Projects\WinMonitorApp(5-4-2016)\WinMonitorApp\obj\Debug\WinMonitorApp.dll
+C:\Users\gtaneja\Documents\Visual Studio 2012\Projects\WinMonitorApp(5-4-2016)\WinMonitorApp\obj\Debug\WinMonitorApp.pdb
+C:\Users\gtaneja\Documents\Visual Studio 2012\Projects\WinMonitorApp(5-4-2016)\WinMonitorApp\obj\Debug\WinMonitorApp.csprojResolveAssemblyReference.cache
